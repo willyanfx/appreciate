@@ -18,7 +18,7 @@ function ensureAuthenticated(
     return response.status(401).end();
   }
 
-  const { _bear, token } = authHeader.split(" ");
+  const { _, token } = authHeader.split(" ");
   try {
     //   validate the token
     const { sub } = verify(token, process.env.JWT_KEY!) as IPayload;

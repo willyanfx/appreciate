@@ -14,7 +14,7 @@ class AuthenticateUserService {
     const usersRepositories = getCustomRepository(UsersRepositories);
 
     // verify if email exists
-    const user = await usersRepositories.findOne(email);
+    const user = await usersRepositories.findOne({ email });
 
     if (!user) {
       throw new Error("Incorrect email/password combination");

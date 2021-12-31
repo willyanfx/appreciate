@@ -10,3 +10,5 @@ class ListUserService {
     return classToPlain(users);
   }
 }
+
+export { ListUserService };

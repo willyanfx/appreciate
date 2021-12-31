@@ -15,3 +15,5 @@ class ListUserReceiveComplimentsController {
     return response.json(compliments);
   }
 }
+
+export { ListUserReceiveComplimentsController };
